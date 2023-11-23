@@ -19,10 +19,10 @@ if __name__ == '__main__':
         if choice=='Y' or 'y':
             write_info(Student_detail_list)
             continuity_check=input("Do you want to add the details of more students? Answer with a (Y/N): ")
-            if continuity_check=='Y' or 'y':
+            if continuity_check=='Y':
                 Addinfo=True
                 St_no=St_no+1
-            elif continuity_check=='N' or 'n':
+            elif continuity_check=='N':
                 Addinfo=False
             else:
                 print('Invalid choice!!')
