@@ -16,17 +16,17 @@ if __name__ == '__main__':
         print("Entered details is: "+str(Student_detail_list))
         print("\nThe entered details is:\nName:{}\nAge:{}\nContact:{}\nEmail:{}\n".format(Student_detail_list[0],Student_detail_list[1],Student_detail_list[2],Student_detail_list[3]))
         choice=input("Is the Entered details correct? Answer with a Y/N: ")
-        if choice=='Y':
+        if choice=='Y' or 'y':
             write_info(Student_detail_list)
             continuity_check=input("Do you want to add the details of more students? Answer with a (Y/N): ")
-            if continuity_check=='Y':
+            if continuity_check=='Y' or 'y':
                 Addinfo=True
                 St_no=St_no+1
-            elif continuity_check=='N':
+            elif continuity_check=='N' or 'n':
                 Addinfo=False
             else:
                 print('Invalid choice!!')
-        elif choice=='N':
+        elif choice=='N' or 'n':
             print('Please re-enter details!!')
        
 
